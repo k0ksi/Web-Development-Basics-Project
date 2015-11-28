@@ -1,4 +1,4 @@
--- CREATE SCHEMA `conference_scheduler` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci ;
+CREATE SCHEMA `conference_scheduler` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci ;
 
 CREATE TABLE `conference_scheduler`.`users` (
   `id` INT NOT NULL AUTO_INCREMENT COMMENT '',
@@ -307,16 +307,41 @@ INSERT INTO `conference_scheduler`.`conference_admins` (`admin_id`, `conference_
 INSERT INTO `conference_scheduler`.`conference_admins` (`admin_id`, `conference_id`) VALUES ('1', '5');
 INSERT INTO `conference_scheduler`.`conference_admins` (`admin_id`, `conference_id`) VALUES ('2', '6');
 
-INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('4', 'OOP Encapsulation and Polymorhism', '2015-12-2 14:00:00', '1', '1', 'OOP Lecture', '1', '2015-12-2 12:00:00');
-INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('3', 'OOP Inheritance', '2015-12-1 15:00:00', '2', '2', 'C# Lecture', '2', '2015-12-1 13:00:00');
-INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('2', 'OOP Exception Handling', '2015-12-3 16:00:00', '3', '3', 'Java Lecture', '4', '2015-12-3 13:00:00');
+INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('4', 'OOP Encapsulation and Polymorhism', '2015-12-2 14:00:00', '3', '1', 'OOP Lecture', '1', '2015-12-2 12:00:00');
+INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('3', 'OOP Inheritance', '2015-12-1 15:00:00', '1', '2', 'C# Lecture', '2', '2015-12-1 13:00:00');
+INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('2', 'OOP Exception Handling', '2015-12-3 16:00:00', '2', '3', 'Java Lecture', '4', '2015-12-3 13:00:00');
 INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('1', 'Web Dev Basics Security', '2015-11-23 17:00:00', '4', '4', 'Web Dev Lecture', '3', '2015-11-23 14:00:00');
 INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('6', 'ASP.NET New Features', '2015-12-3 18:00:00', '5', '5', 'ASP.NET Lecture', '2', '2015-12-3 15:00:00');
 INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('5', 'Use Google properly', '2015-12-3 19:00:00', '6', '6', 'Google Lecture', '1', '2015-12-3 17:00:00');
 
-INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('1', 'Algorithms lecture', '2015-12-3 19:00:00', '7', '7', 'Algorithms', '3', '2015-12-3 17:00:00');
-INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('2', 'PHP Basics lecture', '2015-12-4 19:00:00', '8', '8', 'PHP Basics', '4', '2015-12-4 17:00:00');
-INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('3', 'Advanced C# lecture', '2015-12-3 22:00:00', '9', '9', 'Advanced C#', '2', '2015-12-3 19:00:00');
+INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('1', 'Strong Cohesion Lecture', '2015-11-22 19:00:00', '4', '7', 'Strong Cohesion', '3', '2015-11-22 17:00:00');
+INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('1', 'Loose Coopling Lecture', '2015-11-22 21:00:00', '4', '8', 'Loose Coopling', '4', '2015-11-22 19:00:00');
+INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('1', 'Events Lecture', '2015-11-22 15:00:00', '4', '9', 'Events', '1', '2015-11-22 11:00:00');
+INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('1', 'Cloud Lecture Azure', '2015-11-23 19:00:00', '4', '10', 'Azure', '2', '2015-11-23 17:00:00');
+INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('2', 'Primitive types lecture', '2015-11-30 15:00:00', '2', '11', 'Primitive types', '3', '2015-11-30 13:00:00');
+INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('2', 'Loops Lecture', '2015-11-30 18:00:00', '2', '12', 'Loops', '4', '2015-11-30 16:00:00');
+INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('2', 'Arrays Lecture', '2015-12-1 19:00:00', '2', '13', 'Arrays', '1', '2015-12-1 17:00:00');
+INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('2', 'Conditionals Lecture', '2015-12-3 19:00:00', '2', '14', 'If / else', '1', '2015-12-3 17:00:00');
+INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('3', 'C# 6 -> The future', '2015-12-3 19:00:00', '1', '15', 'C# 6', '2', '2015-12-3 17:00:00');
+INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('3', 'About mice and man', '2015-12-1 19:00:00', '1', '16', 'Mice / man', '2', '2015-12-1 17:00:00');
+INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('3', 'Social engineering Lecture', '2015-12-2 12:30:00', '1', '17', 'Social hacks', '3', '2015-12-2 11:00:00');
+INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('3', 'P vs NP lecture', '2015-12-2 16:00:00', '1', '18', 'P vs NP', '3', '2015-12-2 14:00:00');
+INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('4', 'Greedy algorithms Lecture', '2015-12-4 19:00:00', '3', '19', 'Greedy', '4', '2015-12-4 17:00:00');
+INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('4', 'Graphs and graph algorithms', '2015-12-4 21:00:00', '3', '20', 'Graphs', '4', '2015-12-4 19:00:00');
+INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('4', 'Combinatorics Lecture', '2015-12-5 19:00:00', '3', '21', 'Combinatorics', '1', '2015-12-5 17:00:00');
+INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('4', 'Oracle Database Tools', '2015-12-5 16:00:00', '3', '22', 'Oracle DB', '2', '2015-12-5 13:00:00');
+INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('5', 'T-SQL and Microsoft SQL Tools', '2015-12-1 13:00:00', '5', '23', 'T-SQL', '3', '2015-12-1 11:00:00');
+INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('5', 'MySQL Lecture', '2015-12-1 19:00:00', '5', '24', 'MySQL', '4', '2015-12-1 17:00:00');
+INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('5', 'XML Basics', '2015-12-2 19:00:00', '5', '25', 'XML', '1', '2015-12-2 17:00:00');
+INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('5', 'Json Basics', '2015-12-4 19:00:00', '5', '26', 'Json', '2', '2015-12-4 17:00:00');
+INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('6', 'HTML Basics', '2015-12-4 11:00:00', '6', '27', 'HTML', '3', '2015-12-4 09:00:00');
+INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('6', 'Wordpress Lecture', '2015-12-5 16:00:00', '6', '28', 'Wordpress', '4', '2015-12-5 13:00:00');
+INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('6', 'Social networks Lecture', '2015-12-6 15:00:00', '6', '29', 'Social networks', '1', '2015-12-6 12:30:00');
+INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('6', 'SQL Injection Lecture', '2015-12-6 18:30:00', '6', '30', 'SQL Injection', '2', '2015-12-6 16:00:00');
+
+INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('4', 'Algorithms lecture', '2015-12-3 19:00:00', '3', '31', 'Algorithms', '3', '2015-12-3 17:00:00');
+INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('2', 'PHP Basics lecture', '2015-12-4 19:00:00', '2', '32', 'PHP Basics', '4', '2015-12-4 17:00:00');
+INSERT INTO `conference_scheduler`.`lecture` (`conference_id`, `description`, `end_time`, `hall_id`, `id`, `name`, `speaker_id`, `start_time`) VALUES ('3', 'Advanced C# lecture', '2015-12-3 22:00:00', '1', '33', 'Advanced C#', '2', '2015-12-3 19:00:00');
 
 INSERT INTO `conference_scheduler`.`user_lectures` (`user_id`, `lecture_id`) VALUES('1', '1');
 INSERT INTO `conference_scheduler`.`user_lectures` (`user_id`, `lecture_id`) VALUES('2', '2');
